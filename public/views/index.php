@@ -13,7 +13,8 @@
 
     <link rel="stylesheet" href="assets/css/eggly.css">
     <link rel="stylesheet" href="assets/css/animations.css">
-<!--    <link rel="stylesheet" href="assets/css/app.css">-->
+<!--    <script src="../../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css"></script>-->
+    <!--    <link rel="stylesheet" href="assets/css/app.css">-->
 </head>
 <body>
 <div class="container-fluid">
@@ -28,7 +29,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+<!--<script src="../../node_modules/angular-animate/angular-animate.js"></script>-->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.js"></script>
+<!--<script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>-->
+<!--<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>-->
 <script src="vendor/angular-ui-router.min.js"></script>
 
 <!--We can include all of our angular modules into our main view-->
@@ -42,6 +47,7 @@
 <script src="js/common/models/usstates-model.js"></script>
 
 <script src="js/employees/employees.js"></script>
+<script src="js/employees/accidents/accidents-show.js"></script>
 <script src="js/employees/edit/employee-edit.js"></script>
 <script src="js/employees/create/employee-create.js"></script>
 

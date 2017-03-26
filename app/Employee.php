@@ -33,5 +33,4 @@ class Employee extends Model {
         'TerminationDate',
         'Salary'
     );
-
 }

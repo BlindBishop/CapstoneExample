@@ -72,6 +72,21 @@ class EmployeesController extends Controller
         // return view('employees.show', compact('employee'));
     }
 
+    public function custom(Request $request, Employee $employee)
+    {
+        $login = new Employee;
+
+        $login->email = $request->input('FirstName');
+        $login->pass = $request->input('MI');
+        $checked = 1;
+        if(count($checked) >0){
+            return compact('employee');
+        }
+        else{
+            return false;
+        }
+    }
+
     public function update(Request $request, $id) {
 //        $this->validate($request, [
 //            'FirstName' => 'required | between:1,20 | string',

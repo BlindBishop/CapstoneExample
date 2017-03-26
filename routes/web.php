@@ -19,6 +19,7 @@ Route::group(array('prefix' => 'api'), function() {
     Route::resource('claim', 'ClaimsController');
     Route::resource('usstate', 'USStatesController');
     Route::resource('country', 'CountriesController');
+    Route::get('employee/custom', 'EmployeesController@custom');
 });
 
 

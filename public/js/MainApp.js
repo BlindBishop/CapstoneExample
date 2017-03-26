@@ -1,5 +1,7 @@
 angular.module('MainApp', [
     'ui.router',
+    // 'ui.bootstrap',
+    'ngAnimate',
     'nav',
     'employees',
     'accidents',

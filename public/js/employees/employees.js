@@ -1,5 +1,5 @@
 angular.module('employees', [
-    // We want to include all the submodules that an employee object will have access to.
+    // We want to include all the submodules to which an employee object will have access.
     // employees module is then routed to the main application
     'employees.create',
     'employees.edit',
@@ -23,17 +23,14 @@ angular.module('employees', [
     .controller('EmployeesCtrl', function (EmployeesModel) {
         var employeesCtrl = this;
 
-        // function openEdit(employee) {
-        //     $state.go('wombat.nav.employees.edit', {params: {employeeId: employee.id}})
-        // }
         EmployeesModel.getEmployees()
             .then(function (employees) {
                 employeesCtrl.employees = employees;
             });
 
-        // pull functions from the EmployeesModel into the employeesCtrl
-        // to follow a function, hold ctrl and hover your mouse over the function
+        // IDE Hint: to follow a function, hold ctrl and hover your mouse over the function
         employeesCtrl.deleteEmployee = EmployeesModel.deleteEmployee;
-        // employeesCtrl.openEdit = openEdit;
+            // we can move a function from one class to another by using the above syntax.
+            // here we pull functions from the EmployeesModel into the employeesCtrl
     })
 ;
